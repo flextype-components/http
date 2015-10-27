@@ -1,6 +1,6 @@
 {
   "name": "force/http",
-  "keywords": ["http", "request", "response"],
+  "keywords": ["http", "request", "response", "force"],
   "license": "MIT",
   "homepage": "https://github.com/force-components/Http/issues",
   "description": "Response and Request class",
