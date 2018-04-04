@@ -1,5 +1,9 @@
 <?php
 
+namespace Flextype\Component\Request;
+
+use Flextype\Component\Arr\Arr;
+
 /**
  * This file is part of the Force Components.
  *
