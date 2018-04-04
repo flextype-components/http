@@ -1,6 +1,6 @@
 <?php
 
-namespace Flextype\Component\Response;
+namespace Flextype\Component\Http\Response;
 
 /**
  * This file is part of the Force Components.
