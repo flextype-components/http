@@ -1,6 +1,6 @@
 <?php
 
-namespace Flextype\Component\Request;
+namespace Flextype\Component\Http\Request;
 
 use Flextype\Component\Arr\Arr;
 
