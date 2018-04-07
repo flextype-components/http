@@ -1,47 +1,71 @@
 # Http
-Response and Request class
+![version](https://img.shields.io/badge/version-1.1.0-brightgreen.svg?style=flat-square "Version")
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/flextype-components/http/blob/master/LICENSE)
 
+Simple Http Component to work with Http request, response and urls.
 
-## Response
-
-### Set header status
-```
-Response::status(404);
-```
-
-## Request
-
-### Redirects the browser to a page specified by the $url argument.
-```
-Request::redirect('test');
+Set header status
+```php
+Http::setResponseStatus(404);
 ```
 
-### Set one or multiple headers.
-```
-Request::setHeaders('Location: http://site.com/');
-```
-
-### Get
-```
-$action = Request::get('action');
+Redirects the browser to a page specified by the url argument.
+```php
+Http::redirect('http://flextype.org');
 ```
 
-### Post
-```
-$login = Request::post('login');
+Set one or multiple request headers.
+```php
+Http::setRequestHeaders('Location: http://flextype.org');
 ```
 
-### Returns whether this is an ajax request or not
+Get
+```php
+$action = Http::get('action');
 ```
-if (Request::isAjax()) {
+
+Post
+```php
+$username = Http::post('username');
+```
+
+Returns whether this is an ajax request or not
+```php
+if (Http::isAjaxRequest()) {
   // do something...
 }
 ```
 
-### Terminate request
+Terminate request
+```php
+Http::requestShutdown();
 ```
-Request::shutdown();
+
+
+Gets the base URL
+```php
+echo Http::getBaseUrl();
+```
+
+Gets current URL
+```php
+echo Http::getCurrentUrl();
+```
+
+Get Uri String
+```php
+$uri_string = Http::getUriString();
+```
+
+Get Uri Segments
+```php
+$uri_segments = Http::getUriSegments();
+```
+
+Get Uri Segment
+```php
+$uri_segment = Http::getUriSegment(1);
 ```
 
 ## License
-See [LICENSE](https://github.com/force-components/Http/blob/master/LICENSE)
+See [LICENSE](https://github.com/flextype-components/http/blob/master/LICENSE)

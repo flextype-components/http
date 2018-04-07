@@ -1,3 +1,7 @@
+# v1.1.0, 2018-04-07
+* PHP7 Support Added
+* New Http class added instead of Url, Request and Response classes
+
 # v1.0.2, 2015-10-27
 * Added Composer Support
 * Documentation updates

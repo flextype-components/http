@@ -4,7 +4,7 @@
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/flextype-components/http",
-  "description": "Simple Http Class",
+  "description": "Simple Http Component",
   "authors": [
     {
         "name": "Sergey Romanenko",

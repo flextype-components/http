@@ -261,13 +261,13 @@ class Http
     /**
      * Returns whether this is an ajax request or not
      *
-     * if (Http::isAjax()) {
+     * if (Http::isAjaxRequest()) {
      *   // do something...
      * }
      *
      * @return boolean
      */
-    public static function isAjax() : bool
+    public static function isAjaxRequest() : bool
     {
         return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
     }
