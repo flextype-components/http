@@ -252,7 +252,7 @@ class Http
      * @param int $segment segment
      * @return string
      */
-    public static function getUriSegment(int $segment) : string
+    public static function getUriSegment(int $segment)
     {
         $segments = self::getUriSegments();
         return isset($segments[$segment]) ? $segments[$segment] : null;
